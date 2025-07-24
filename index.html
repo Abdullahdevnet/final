@@ -95,19 +95,32 @@
            <section class="bg-black/40 py-10 px-4 flex flex-col items-center text-center">
     
     <!-- Headline -->
-    <div class="flex flex-wrap gap-2 justify-center items-center">
-      <h1 class="text-white text-3xl sm:text-5xl lg:text-7xl font-bold">Build</h1>
-      <h1 class="text-[#33e1f1] text-3xl sm:text-5xl lg:text-7xl font-bold">AI Agents</h1>
-    </div>
+ <!-- Desktop View (Hidden on Mobile) -->
+<div class="hidden md:flex flex-wrap gap-2 justify-center items-center">
+  <h1 class="text-white text-3xl sm:text-5xl lg:text-7xl font-bold">Build</h1>
+  <h1 class="text-[#33e1f1] text-3xl sm:text-5xl lg:text-7xl font-bold">AI Agents</h1>
+</div>
 
-    <!-- Subheadline -->
-    <h2 class="text-white text-2xl sm:text-4xl md:text-5xl font-bold mt-4">
-      with <br><span class="uppercase">ShadowCore <br> AI</span>
-    </h2>
+<h2 class="hidden md:block text-white text-2xl sm:text-4xl md:text-5xl font-bold mt-4">
+  with <span class="uppercase">ShadowCore AI</span>
+</h2>
+
+<!-- Mobile View (Hidden on Desktop) -->
+<div class="block md:hidden text-center mt-4">
+  <h1 class="text-5xl font-bold leading-tight">
+    <span class="text-white">Build</span> 
+    <span class="text-[#33e1f1]">AI Agent</span>
+  </h1>
+  <h1 class="text-white text-4xl font-bold leading-tight">With</h1>
+  <h1 class="text-white text-4xl font-bold leading-tight">Shadowcore</h1>
+  <h1 class="text-[#33e1f1] text-4xl font-bold leading-tight">AI</h1>
+</div>
+
+
 
     <!-- Tagline -->
     <p class="mt-10 text-base sm:text-lg md:text-xl font-bold w-full max-w-3xl">
-      Empowering <span class="text-[#33e1f1]">Multichain AI Agents <br></span> with privacy and scalability
+      Empowering <span class="text-[#33e1f1]">Multichain AI Agents </span> with privacy and scalability
     </p>
 
     <!-- Image (alien logo) -->
